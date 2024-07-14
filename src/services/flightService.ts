@@ -1,5 +1,4 @@
 import axios from 'axios';
-import { Flight } from '../models/Flight';
 const API_URL = 'http://localhost:8080/user/flights';
 
 const getToken = () => {

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import * as flightService from "../../services/flightService";
 import "../../css/addflight.css";
 import { Link } from "react-router-dom";
+import { addFlight } from "../../services/adminservice";
 
 const AddFlight = () => {
   const [flight, setFlight] = useState({
@@ -23,7 +24,7 @@ const AddFlight = () => {
     e.preventDefault();
     console.log(flight); // Log the flight data
     try {
-      const response = await flightService.addFlight(flight);
+      const response = await addFlight(flight);
       console.log(response.data);
       alert("Flight added successfully!");
     } catch (error) {

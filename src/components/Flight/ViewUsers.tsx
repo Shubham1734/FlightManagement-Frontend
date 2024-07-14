@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import {getUsers} from '../../services/adminservice'
 
 const ViewUsers: React.FC = () => {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [users, setUsers] = useState<any[]>([]);
 
   useEffect(() => {

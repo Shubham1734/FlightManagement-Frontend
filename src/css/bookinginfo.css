@@ -1,0 +1,68 @@
+/* bookinginfo.css */
+
+.booking-container {
+    max-width: auto;
+    margin: 0 auto;
+    padding: 20px;
+    
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .inner {
+    margin: 20px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  p {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #555;
+  }
+  
+  strong {
+    color: #333;
+  }
+  
+  h2 {
+    font-size: 10px;
+    color: #444;
+  }
+  
+  button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button.add {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  button.minus {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  button:hover {
+    background-color: #333;
+    color: white;
+  }
+  
+  span {
+    font-size: 18px;
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 5px;
+  }

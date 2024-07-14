@@ -1,0 +1,80 @@
+
+form {
+  width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  height: auto;
+  background-color: rgba(100, 198, 233, 0.413);
+}
+
+form input {
+  width: 100%;
+  padding: 25px;
+  margin: 10px 0;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+form button {
+  width: 100%;
+  padding: 15px;
+  background-color: #28a745;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 25px;
+  transition: background-color 0.3s;
+}
+
+
+table {
+  width: 100%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background-color: #007bff;
+  color: white;
+  text-transform: uppercase;
+}
+
+table tr:hover {
+  background-color: #f1f1f1;
+  transition: background-color 0.3s;
+}
+
+table button {
+  padding: 10px 15px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+table button:hover {
+  background-color: #218838;
+}
+
+.main-container h2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading{
+  text-align: center;
+}

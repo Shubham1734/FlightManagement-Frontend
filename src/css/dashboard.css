@@ -1,0 +1,105 @@
+.app-container {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #36d1dc, #5b86e5);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #036c76;
+  padding: 10px 20px;
+  color: black;
+}
+
+.logo span h1 {
+  font-family: bold;
+  color: white;
+  word-spacing: 20px;
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+}
+
+.header .logo img {
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 100%;
+}
+.navbar {
+  border-radius: 10px;
+}
+.navbar a {
+  color: white;
+  justify-content: space-between;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.body {
+  height: 200px;
+}
+/* .body h2{
+  color: white;
+  margin-top: 15PX;
+  margin-left: 450px;
+} */
+.body button {
+ 
+  color: white;
+  width: 130px;
+  height: 30px;
+  border-radius: 10px;
+  margin-left: 10px;
+  padding: 5px;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+}
+
+.footer .footer-content {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .footer-logo {
+  display: block;
+  align-items: center;
+}
+
+.footer .footer-logo img {
+  height: 50px;
+  margin-right: 20px;
+  border-radius: 100%;
+}
+
+.footer .footer-links a {
+  color: white;
+  margin: 0 10px;
+}
+
+.footer .footer-links a:hover {
+  text-decoration: none;
+}
+
+.footer h2 {
+  word-spacing: 20px;
+}

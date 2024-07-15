@@ -1,0 +1,35 @@
+
+
+.updateflight{
+    width: 600px;
+    height: auto;
+    margin-left: 450px;
+    border: 2px solid black;
+    border-radius: 10px; 
+    margin-top: 80px;
+}
+
+.updateflight input{
+    height: 50px;
+    width: 95%;
+    margin-left:10px;
+    margin-top:10px;
+    border-radius: 10px;
+}
+
+.updateflight label{
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    
+
+}
+.updateflight button{
+    height: 50px;
+    width: 95%;
+    margin: 10px;
+    background-color: rgb(109, 205, 109);
+    color: black;
+}
+

@@ -1,0 +1,34 @@
+
+.header{
+    height: 80px;
+    padding: 10px;
+}
+
+.addflight-form{
+    width: auto;
+    height: auto;
+    margin-left: 500px;
+    border: 1px solid black;
+    border-radius: 10px;
+    max-width: 500px;
+    margin-top: 20px;
+}
+
+.addflight-form input{
+    height: 50px;
+    width: 95%;
+    margin-left:10px;
+    margin-top:10px;
+}
+
+.addflight-form button{
+    height: 50px;
+    width: 95%;
+    margin: 10px;
+    background-color: grey;
+    color: black;
+}
+
+.addflight-form button:hover{
+    background-color: green;
+}

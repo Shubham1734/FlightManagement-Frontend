@@ -1,0 +1,110 @@
+.app-container {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #add8e6, #ffffff);
+
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color:black;
+  padding: 10px;
+  height: 70px;
+
+}
+
+.logo span h1 {
+  font-family: bold;
+  color: white;
+  word-spacing: 20px;
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+}
+
+.header .logo img {
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 100%;
+}
+.navbar {
+  border-radius: 10px;
+}
+.navbar a {
+  color: white;
+  justify-content: space-between;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.body {
+  height: 300px;
+}
+.body img{
+  height: 200px;
+  width: 500px;
+  margin-left: 500px;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+.body h2{
+  color: #000080;
+  margin-top: 15PX;
+  margin-left: 450px;
+}
+
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.footer {
+  background-color:black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+}
+.footer-content h2{
+  margin-left: 3ex;
+}
+
+.footer .footer-logo {
+  display: block;
+  align-items: center;
+}
+
+.footer .footer-logo img {
+  height: 50px;
+
+  border-radius: 100%;
+}
+
+.footer .footer-links a {
+  color: white;
+  margin: 0 10px;
+}
+
+.policy p{
+  color: white;
+}
+.footer .footer-links a:hover {
+  text-decoration: none;
+}
+
+.footer h2 {
+  word-spacing: 20px;
+}
+
+span h2{
+  text-align: center;
+}

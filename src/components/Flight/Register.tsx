@@ -10,6 +10,7 @@ const Register: React.FC = () => {
     password: "",
     email: "",
     phone: "",
+    role:"USER"
   });
 
   const [error, setError] = useState<string | null>(null);

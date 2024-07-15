@@ -1,13 +1,13 @@
 import React, { useState } from "react";
-import { loginUser } from "../../services/userService";
+import { getUser, loginUser } from "../../services/userService";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { addUser } from "../../Redux/actions/userAction";
+// import { addUser } from "../../Redux/actions/userAction";
 import "../../css/login.css";
-
+import Cookies from "js-cookie";
 const Login = () => {
   const navigate = useNavigate();
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -19,7 +19,11 @@ const Login = () => {
       console.log(response.data);
       console.log(response.data)
       sessionStorage.setItem('token', response.data.jwttoken);
-      dispatch(addUser(response.data));
+
+      const userData = await getUser(username);
+      Cookies.set('userData', JSON.stringify(userData.data), { expires: 1 });
+      // dispatch(addUser(userData));
+
       navigate("/flights-search");
     } catch (e) {
       setFlag(true);

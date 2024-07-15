@@ -13,6 +13,7 @@ import Dashboard from "./components/Flight/Dashboard";
 import Admin from './components/Flight/Admin';
 import ViewBookings from "./components/Flight/ViewBookings";
 import ViewUsers from "./components/Flight/ViewUsers";
+import TicketPage from "./components/Flight/TicketPage";
 function App() {
   const bookingDetailRef = useRef<any>(null);
 
@@ -33,7 +34,7 @@ function App() {
           <Route path="/update-flight/:flightId" element={<UpdateFlight />} />
           <Route path="user-profile" element={<UserProfile />} />
           {/* <Route path="/new" element={<NewDashboard />} /> */}
-
+          <Route path="/ticket" element={<TicketPage/>} />
           <Route path="/view-users" element={<ViewUsers />} />
           <Route path="/view-bookings" element={<ViewBookings />} />
 

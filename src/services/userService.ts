@@ -10,6 +10,7 @@ export const loginUser = (username : string, password : string) => {
     return axios.post(`${API_URL}` + "/login", {username, password});
 }
 
+
 const apiforuser = 'http://localhost:8080/user/getuser';
 const getToken = () => {
     return sessionStorage.getItem('token');

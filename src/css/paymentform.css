@@ -26,6 +26,14 @@ h2{
     margin-left: auto;
     height: 50px;
     width: 100%;
+    font-size: 20px;
+    
+}
+.pay{
+    background-color: rgba(0, 157, 255, 0.347);
+}
+.print{
+    background-color: rgb(119, 209, 119);
 }
 .payment-form input{
     height: 50px;

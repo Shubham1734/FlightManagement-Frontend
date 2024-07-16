@@ -1,27 +1,39 @@
-.flightlist{
-    background: linear-gradient(to right, #36d1dc, #5b86e5);;
-}
+
 
 h1{
     text-align: center;
 }
 body{
-    color: white;
+    background: linear-gradient(to right, #add8e6, #ffffff);
 }
 table{
-    width: 100%;
+    width: 98%;
     border:1px solid black;
+    border-radius: 10px;
     margin-top: 30px;
+    margin-left: 10px;
     
 }
 
 th, td {
-    border: 1px solid #ddd;
+   
     margin: 15px;
     padding: 15px;
+    
   }
 
 .delete{
     margin-right: 15px;
     background-color:tomato;
+    border-radius: 10px;
+    height: 40px;
+    width: fit-content;
+}
+
+.update{
+    margin-right: 15px;
+    background-color: green;
+    border-radius: 10px;
+    height: 40px;
+    width:fit-content ;
 }

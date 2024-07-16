@@ -10,7 +10,6 @@ const FlightSearch = () => {
   const [flights, setFlights] = useState<Flight[]>([]);
   const navigate = useNavigate();
 
-
   async function handleSubmit(
     event: FormEvent<HTMLFormElement>
   ): Promise<void> {
@@ -27,10 +26,10 @@ const FlightSearch = () => {
 
   return (
     <>
+      
+
       <div className="main-container">
-        <div className="heading">
-          <h2>ENTER DETAILS TO SEARCH AVAILABLE FLIGHTS</h2>
-        </div>
+        <h2>ENTER DETAILS TO SEARCH FLIGHT</h2>
         <div className="form-container">
           <form onSubmit={handleSubmit}>
             <input
@@ -47,7 +46,8 @@ const FlightSearch = () => {
               onChange={(e) => setDestination(e.target.value)}
               required
             />
-            <br /><br />
+            <br />
+            <br />
             <button type="submit">Search Flights</button>
           </form>
         </div>

@@ -35,7 +35,7 @@ const FlightList: React.FC = () => {
 
   return (
     <div className='flightlist'>
-    <h1>FLIGHTS &nbsp;</h1>
+    <h1>AVAILABLE &nbsp; FLIGHTS </h1>
     <table>
       <thead>
         <tr>
@@ -59,7 +59,7 @@ const FlightList: React.FC = () => {
               <button className ="delete" onClick={() => handleDeleteFlight(flight.flightId)}>
                 Delete
               </button>
-              <button onClick={() => handleUpdate(flight.flightId)}>
+              <button className="update" onClick={() => handleUpdate(flight.flightId)}>
                 Update
               </button>
             </td>

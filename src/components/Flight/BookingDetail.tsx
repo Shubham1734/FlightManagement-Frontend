@@ -54,7 +54,7 @@ const BookingDetail = forwardRef((props, ref) => {
     <>
       {!showPaymentForm ? (
         <>
-          <h1>Your Booking Details...</h1>
+          <h1>YOUR BOOKING DETAILS</h1>
           <div className="booking-container">
             <div className="inner">
               <p>Booking for flight ID: {flightId}</p>
@@ -62,9 +62,11 @@ const BookingDetail = forwardRef((props, ref) => {
               <p>
                 <strong>Origin:</strong> {flight.origin}
               </p>
+
               <p>
                 <strong>Destination:</strong> {flight.destination}
               </p>
+
               <p>
                 <strong>Departure Time:</strong>{" "}
                 {new Date(flight.departureTime).toLocaleString()}
@@ -76,22 +78,20 @@ const BookingDetail = forwardRef((props, ref) => {
               <p>
                 <strong>Price per Ticket:</strong> ${flight.price}
               </p>
-              <h2>Select Ticket Quantity</h2>
-              <div>
-                <button className="add" onClick={handleDecreaseQuantity}>
-                  -
-                </button>
+              <h3>Select Ticket Quantity</h3>
+              <button className="add" onClick={handleDecreaseQuantity}>
+                -
+              </button>
+             
+              <span>{ticketQuantity}</span>
+              <button className="minus" onClick={handleIncreaseQuantity}>
+                +
+              </button>
 
-                <span>{ticketQuantity}</span>
-                <button className="minus" onClick={handleIncreaseQuantity}>
-                  +
-                </button>
-              </div>
+              <h3>Total Price: Rs: INR {totalPrice}</h3>
 
-              <h2>Total Price: Rs: INR {totalPrice}</h2>
               <button onClick={handleConfirmBooking}>Confirm Booking</button>
               <br />
-          
             </div>
           </div>
         </>

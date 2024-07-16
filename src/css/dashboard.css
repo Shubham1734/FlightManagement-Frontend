@@ -1,14 +1,16 @@
 .app-container {
   font-family: Arial, sans-serif;
-  background: linear-gradient(to right, #36d1dc, #5b86e5);
+  background: linear-gradient(to right, #add8e6, #ffffff);
+
 }
 
 .header {
   display: flex;
   justify-content: space-between;
-  background-color: #036c76;
-  padding: 10px 20px;
-  color: black;
+  background-color:black;
+  padding: 10px;
+  height: 70px;
+
 }
 
 .logo span h1 {
@@ -38,22 +40,21 @@
 }
 
 .body {
-  height: 200px;
+  height: 300px;
 }
-/* .body h2{
-  color: white;
+.body img{
+  height: 200px;
+  width: 500px;
+  margin-left: 500px;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+.body h2{
+  color: #000080;
   margin-top: 15PX;
   margin-left: 450px;
-} */
-.body button {
- 
-  color: white;
-  width: 130px;
-  height: 30px;
-  border-radius: 10px;
-  margin-left: 10px;
-  padding: 5px;
 }
+
 
 .main-content {
   display: flex;
@@ -63,7 +64,7 @@
 
 
 .footer {
-  background-color: #333;
+  background-color:black;
   color: white;
   padding: 20px;
   text-align: center;
@@ -73,11 +74,8 @@
   width: 100%;
   height: auto;
 }
-
-.footer .footer-content {
-  display: block;
-  justify-content: center;
-  align-items: center;
+.footer-content h2{
+  margin-left: 3ex;
 }
 
 .footer .footer-logo {
@@ -87,7 +85,7 @@
 
 .footer .footer-logo img {
   height: 50px;
-  margin-right: 20px;
+
   border-radius: 100%;
 }
 
@@ -96,10 +94,17 @@
   margin: 0 10px;
 }
 
+.policy p{
+  color: white;
+}
 .footer .footer-links a:hover {
   text-decoration: none;
 }
 
 .footer h2 {
   word-spacing: 20px;
+}
+
+span h2{
+  text-align: center;
 }

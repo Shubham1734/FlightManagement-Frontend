@@ -44,6 +44,7 @@ const AddFlight = () => {
         </nav>
       </header>
       <h2 id="add-flight">Enter New Flight Details</h2>
+      <div className="addflight-form">
       <form onSubmit={handleFlight}>
         <div className="addcontainer">
           <input
@@ -103,6 +104,8 @@ const AddFlight = () => {
           <button type="submit">Add Flight</button>
         </div>
       </form>
+      </div>
+      
     </div>
   );
 };

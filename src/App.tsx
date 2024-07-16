@@ -34,9 +34,10 @@ function App() {
           <Route path="/update-flight/:flightId" element={<UpdateFlight />} />
           <Route path="user-profile" element={<UserProfile />} />
           {/* <Route path="/new" element={<NewDashboard />} /> */}
-          <Route path="/ticket" element={<TicketPage/>} />
+
           <Route path="/view-users" element={<ViewUsers />} />
           <Route path="/view-bookings" element={<ViewBookings />} />
+          <Route path="/ticket" element={<TicketPage />} />
 
         </Routes>
       </div>

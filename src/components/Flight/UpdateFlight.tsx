@@ -53,10 +53,10 @@ const UpdateFlight: React.FC = () => {
 
   return (
     <div className='updateflight'>
-      <h1>Update Flight</h1>
+      <h1>UPDATE &nbsp;FLIGHT</h1>
       <form onSubmit={handleUpdateFlight}>
         <div>
-          <label>Origin:</label>
+          <label>Origin:</label><br />
           <input
             type="text"
             name="origin"

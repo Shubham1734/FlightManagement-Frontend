@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import { getUser, loginUser } from "../../services/userService";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
-// import { addUser } from "../../Redux/actions/userAction";
-import "../../css/login.css";
 import Cookies from "js-cookie";
+import "../../css/login.css";
+
 const Login = () => {
   const navigate = useNavigate();
-  // const dispatch = useDispatch();
+  const dispatch = useDispatch();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -19,24 +19,25 @@ const Login = () => {
       console.log(response.data);
       console.log(response.data)
       sessionStorage.setItem('token', response.data.jwttoken);
-
       const userData = await getUser(username);
       Cookies.set('userData', JSON.stringify(userData.data), { expires: 1 });
-      // dispatch(addUser(userData));
-
+     
       navigate("/flights-search");
     } catch (e) {
       setFlag(true);
       console.log("something wrong");
     }
   };
+
+
   return (
     <>
-      <div className="form-div">
-        <h2 id="login">Login</h2>
+    <h2>Login</h2>
+      <div className="loginform-div">
+        
         <form onSubmit={handleSubmit}>
           <div>
-            <label>username:</label>
+            <label>username:</label><br />
             <input
               type="text"
               value={username}
@@ -46,7 +47,7 @@ const Login = () => {
             />
           </div>
           <div>
-            <label>Password:</label>
+            <label>Password:</label><br />
             <input
               type="password"
               value={password}
@@ -54,9 +55,9 @@ const Login = () => {
               placeholder="Enter Password"
               required
             />
-          </div>
+          </div><br />
           <div>
-            <button type="submit" id="login-button">Login</button>
+            <button type="submit" >Login</button>
           </div>
           <div>
             {flag === true ? (

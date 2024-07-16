@@ -47,7 +47,6 @@ const PaymentForm: React.FC<PaymentFormProps> = ({
         state: {
           booking: {
             ...bookingResponse.data,
-
           },
           user: userData,
         },
@@ -94,7 +93,7 @@ const PaymentForm: React.FC<PaymentFormProps> = ({
           <br /><br />
           <button onClick={handlePayment}>Pay Rs {totalPrice}</button>
           <br /><br />
-          <button onClick={handlePrint} id="print">Print</button>
+          
         </div>
       </div>
     </>

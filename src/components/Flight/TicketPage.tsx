@@ -1,23 +1,38 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom';
-// import "../../css/ticketpage.css";
+import { useLocation, useNavigate } from 'react-router-dom';
+import "../../css/ticketpage.css";
+
+const handlePrint = () => {
+    window.print();
+}
 
 const TicketPage: React.FC = () => {
     const location = useLocation();
+    const navigate = useNavigate();
     const { booking, user } = location.state;
+ 
+    const handleCancel = () =>{
+        navigate('/');
+    }
+    
+
+    
 
     return (
-        <div className="ticket-container">
-            <h2>Booking Confirmation</h2>
-            <p>Flight ID: {booking.flight.flightId}</p>
-            <p>Flight Date: {booking.flight.flightDate}</p>
-            <p>User ID: {user.id}</p>
-            <p>Username: {user.username}</p>
-            <p>Email: {user.email}</p>
-            <p>Phone: {user.phone}</p>
-            <p>Booking Date: {booking.bookingDate}</p>
-            <p>Status: {booking.status ? 'Confirmed' : 'Pending'}</p>
-        </div>
+        <>
+            <h2>BOOKING CONFIRMATION</h2>
+            <div className="ticket-container">
+                <p>User ID: {user.id}</p>
+                <p>Username: {user.username}</p>
+                <p>Email: {user.email}</p>
+                <p>Phone: {user.phone}</p>
+                <p>Booking Date: {booking.bookingDate}</p>
+                <p>Payment : Done</p>
+                <p>Status: {booking.status ? 'Confirmed' : 'Pending'}</p>
+                <button id="print" onClick={handlePrint}>Print</button><br />
+                <button id="cancel" onClick={handleCancel}>Cancel</button>
+            </div>
+        </>
     );
 };
 

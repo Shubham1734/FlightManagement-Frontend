@@ -1,3 +1,4 @@
+
 import axios from 'axios';
 const API_URL = 'http://localhost:8080/user/bookings';
 const getToken = () => {
@@ -18,3 +19,20 @@ export const addbooking = async(flightId:any, userid:any) => {
         throw error;
     }
 }
+
+
+// delete 
+
+export const deleteBooking = async (bookingId: string) => {
+    const token = getToken();
+    const headers = {
+        'Authorization': `Bearer ${token}`
+    };
+    try {
+        const response = await axios.delete(`${API_URL}/bookings/${bookingId}`, { headers });
+        return response;
+    } catch (error) {
+        console.error('Error deleting booking:', error);
+        throw error;
+    }
+};

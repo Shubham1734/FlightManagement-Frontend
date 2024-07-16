@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import "../../css/ticketpage.css";
+import { deleteBooking } from '../../services/bookingService';
 
 const handlePrint = () => {
     window.print();
@@ -11,8 +12,14 @@ const TicketPage: React.FC = () => {
     const navigate = useNavigate();
     const { booking, user } = location.state;
  
-    const handleCancel = () =>{
-        navigate('/');
+    const handleCancel = async() =>{
+        try {
+            await deleteBooking(booking.bookingId);
+            console.log("deleted");
+            navigate('/');
+        } catch (error) {
+            console.error('Error deleting booking:', error);
+        }
     }
     
 
